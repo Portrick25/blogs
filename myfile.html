@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+									<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+
+					<!-- TODO: Add SDKs for Firebase products that you want to use
+    					 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" href="title-icon.jpg" type="image/icon type" style="border-radius: 50%;width: 2em;height: 2em;">
+	<title>thesocial.world</title>
+</head>
+<body>
+	<form id= my-it-blogs>
+		<input type="text" name="title" placeholder="blog-title" required>
+		<input type="text" name="description" placeholder="blog-description" required>
+		<input type="date" name="date" required>
+		<button>Submit</button>
+	</form>
+
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyApkttfwqDJjLE23nPMKuDZtvF2Ncl8sLk",
+    authDomain: "firestore-6a1e6.firebaseapp.com",
+    databaseURL: "https://firestore-6a1e6.firebaseio.com",
+    projectId: "firestore-6a1e6",
+    storageBucket: "firestore-6a1e6.appspot.com",
+    messagingSenderId: "987212896202",
+    appId: "1:987212896202:web:e257edb9aaf0924f4c6133",
+    measurementId: "G-636CCP58YG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+  //db.settings({timestampsInSnapshots : true});
+</script>
+<script src="app.js"></script>
+</body>
+</html>
